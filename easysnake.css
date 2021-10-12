@@ -1,0 +1,19 @@
+﻿body{
+background-color: black;
+}
+
+#snakeboard{
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+border: 0.1px solid white;
+}
+
+#score {
+top: 10%;
+position: relative;
+text-align: center;
+font-size: 5em;
+color: white;
+}
