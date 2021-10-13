@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<head>
+
+<title>Snake spel</title>
+<meta charset="utf-8"/>
+<meta name="description" content="Snake Game">
+<meta name="author" content="Kubilay Kartov">
+
+</head>
+
+<body>
+
+<!--
+Gör en div med id:n "score" som med hjälp av CSS koden ska bestämma 
+t.ex vart Score ska visas, vart den ska ligga osv
+-->
+
+<div id="score">Score: 0</div>
+
+<!--
+Skapar en canvas med id:n som heter "snakeboard" med höjden 600px och bredden 600px som används
+för att rita grafik via javascript. I detta fall ska det dock användas som en spelplan
+-->
+
+<canvas id="snakeboard" width="600" height="600"></canvas>
+
+<!-- 
+Använder "link rel" för att länka till CSS filen och "script src" för att länka till 
+javascript filen
+-->
+
+<link rel="stylesheet" href="easysnake.css">
+<script src="easysnake.js"></script>
+
+</body>
+</html>
