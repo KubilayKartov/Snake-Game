@@ -6,6 +6,7 @@
 <meta charset="utf-8"/>
 <meta name="description" content="Snake Game">
 <meta name="author" content="Kubilay Kartov">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -23,7 +24,30 @@ Skapar en canvas med id:n som heter "snakeboard" med höjden 600px och bredden 6
 för att rita grafik via javascript. I detta fall ska det dock användas som en spelplan
 -->
 
-<canvas id="snakeboard" width="600" height="600"></canvas>
+<canvas id="bord" width="500" height="500"></canvas>
+
+<!--
+Knapp för att restarta spelet när man förlorar
+Funktionen onClick används för att när man trycker på "restart" så 
+refreshas sidan
+-->
+
+<button onClick="history.go(0)" class="restart1">Restart</button>
+
+<!-- -->
+
+<section class="wholetime">
+
+  <div class="display">
+    <div id="min">00</div>
+    <div id="sec">00</div>
+    <div id="msec">00</div>
+  </div>
+
+</section>
+
+<br>
+<br>
 
 <!-- 
 Använder "link rel" för att länka till CSS filen och "script src" för att länka till 
@@ -31,7 +55,7 @@ javascript filen
 -->
 
 <link rel="stylesheet" href="easysnake.css">
-<script src="easysnake.js"></script>
+<script src="easysnake.js"defer></script>
 
 </body>
 </html>
